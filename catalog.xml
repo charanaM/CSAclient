@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/CSA_cw1_ws/Login?wsdl" uri="xml-resources/web-service-references/Login/wsdl/localhost_8080/CSA_cw1_ws/Login.wsdl"/>
+    <system systemId="http://localhost:8080/CSA_cw1_ws/Login?xsd=1" uri="xml-resources/web-service-references/Login/wsdl/localhost_8080/CSA_cw1_ws/Login.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/CSA_cw1_ws/Threads?wsdl" uri="xml-resources/web-service-references/Threads/wsdl/localhost_8080/CSA_cw1_ws/Threads.wsdl"/>
+    <system systemId="http://localhost:8080/CSA_cw1_ws/Threads?xsd=1" uri="xml-resources/web-service-references/Threads/wsdl/localhost_8080/CSA_cw1_ws/Threads.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/CSA_cw1_ws/Chats?wsdl" uri="xml-resources/web-service-references/Chats/wsdl/localhost_8080/CSA_cw1_ws/Chats.wsdl"/>
+    <system systemId="http://localhost:8080/CSA_cw1_ws/Chats?xsd=1" uri="xml-resources/web-service-references/Chats/wsdl/localhost_8080/CSA_cw1_ws/Chats.xsd_1.xsd"/>
+</catalog>

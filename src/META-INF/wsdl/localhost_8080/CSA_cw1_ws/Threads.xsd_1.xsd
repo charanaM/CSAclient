@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://CSA_cw1_ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://CSA_cw1_ws/">
+
+<xs:element name="createThread" type="tns:createThread"/>
+
+<xs:element name="createThreadResponse" type="tns:createThreadResponse"/>
+
+<xs:element name="displayChats" type="tns:displayChats"/>
+
+<xs:element name="displayChatsResponse" type="tns:displayChatsResponse"/>
+
+<xs:element name="getAllThreads" type="tns:getAllThreads"/>
+
+<xs:element name="getAllThreadsResponse" type="tns:getAllThreadsResponse"/>
+
+<xs:element name="newChatEntry" type="tns:newChatEntry"/>
+
+<xs:element name="newChatEntryResponse" type="tns:newChatEntryResponse"/>
+
+<xs:complexType name="getAllThreads">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllThreadsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createThread">
+<xs:sequence>
+<xs:element name="title" type="xs:string" minOccurs="0"/>
+<xs:element name="createDate" type="xs:string" minOccurs="0"/>
+<xs:element name="createdBy" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createThreadResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="newChatEntry">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+<xs:element name="lastEdited" type="xs:string" minOccurs="0"/>
+<xs:element name="addedBy" type="xs:string" minOccurs="0"/>
+<xs:element name="threadID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="newChatEntryResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="displayChats">
+<xs:sequence>
+<xs:element name="threadID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="displayChatsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
